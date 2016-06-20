@@ -5,18 +5,28 @@ var firstAndPike = {
   maximumCustomers: 65,
   averageCookies: 6.3,
   hourlyCustomers: function() {
-    for (var i = 1; i < hours.length; i++) {
+    for (var i = 0; i < hours.length; i++) {
       var customers = Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers);
-      console.log(hours[i], customers);
+      this.hourlyCustomersArray.push(customers);
     }
   },
   hourlyPurchases: function() {
-    for (var i = 1; i < hours.length; i++) {
+    for (var i = 0; i < hours.length; i++) {
       var purchases = Math.floor(Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers) * this.averageCookies);
       console.log(hours[i], purchases);
     }
-  }
+  },
+  hourlyCustomersArray : []
 };
+firstAndPike.hourlyCustomers();
+var customerList =  document.getElementById('firstAndPike_Customers');
+for (var i = 0; i < hours.length; i++) {
+  var listItem = document.createElement('li');
+  var listContent = hours[i] + ' ' + firstAndPike.hourlyCustomersArray[i];
+  listItem.textContent = listContent;
+  customerList.appendChild(listItem);}
+
+// ============================
 
 var seaTacAirport = {
   minimumCustomers: 3 ,
