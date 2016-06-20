@@ -5,9 +5,16 @@ var firstAndPike = {
   maximumCustomers: 65,
   averageCookies: 6.3,
   hourlyCustomers: function() {
-    for (var i = 1; i < 15; i++) {
+    for (var i = 1; i < hours.length; i++) {
       var customers = Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers);
-      console.log(hours[i], customers);}
+      console.log(hours[i], customers);
+    }
+  },
+  hourlyPurchases: function() {
+    for (var i = 1; i < hours.length; i++) {
+      var purchases = Math.floor(Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers) * this.averageCookies);
+      console.log(hours[i], purchases);
+    }
   }
 };
 
@@ -18,7 +25,15 @@ var seaTacAirport = {
   hourlyCustomers: function() {
     for (var i = 1; i < 15; i++) {
       var customers = Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers);
-      console.log(hours[i], customers);}
+      console.log(hours[i], customers);
+    }
+  },
+
+  hourlyPurchases: function() {
+    for (var i = 1; i < hours.length; i++) {
+      var purchases = Math.floor(Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers) * this.averageCookies);
+      console.log(hours[i], purchases);
+    }
   }
 };
 var seattleCenter = {
@@ -28,7 +43,14 @@ var seattleCenter = {
   hourlyCustomers: function() {
     for (var i = 1; i < 15; i++) {
       var customers = Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers);
-      console.log(hours[i], customers);}
+      console.log(hours[i], customers);
+    }
+  },
+  hourlyPurchases: function() {
+    for (var i = 1; i < hours.length; i++) {
+      var purchases = Math.floor(Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers) * this.averageCookies);
+      console.log(hours[i], purchases);
+    }
   }
 };
 
@@ -39,7 +61,14 @@ var capitolHill = {
   hourlyCustomers: function() {
     for (var i = 1; i < 15; i++) {
       var customers = Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers);
-      console.log(hours[i], customers);}
+      console.log(hours[i], customers);
+    }
+  },
+  hourlyPurchases: function() {
+    for (var i = 1; i < hours.length; i++) {
+      var purchases = Math.floor(Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers) * this.averageCookies);
+      console.log(hours[i], purchases);
+    }
   }
 };
 
@@ -50,6 +79,13 @@ var alki = {
   hourlyCustomers: function() {
     for (var i = 1; i < 15; i++) {
       var customers = Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers);
-      console.log(hours[i], customers);}
+      console.log(hours[i], customers);
+    }
+  },
+  hourlyPurchases: function() {
+    for (var i = 1; i < hours.length; i++) {
+      var purchases = Math.floor(Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers) * this.averageCookies);
+      console.log(hours[i], purchases);
+    }
   }
 };
