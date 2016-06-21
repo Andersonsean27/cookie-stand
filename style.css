@@ -1,1 +1,14 @@
+* {
+  background-color: #e3c2c9;
+  font-weight: bold;
+  font-family: verdana ref;
+}
+ul {
+  background-color: #B85F68;
+  display: inline-block;
+  font-family: verdana;
+}
+div > div {
+  background-color: #FF1C0D
 
+}
