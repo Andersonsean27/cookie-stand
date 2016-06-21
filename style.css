@@ -16,3 +16,6 @@ div > div {
 section {
   background-color: #FF1C0D;
 }
+table, tr, td, th {
+  outline: 1px solid black;
+}
