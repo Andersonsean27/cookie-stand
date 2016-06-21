@@ -83,14 +83,34 @@ var seattleCenter = {
     for (var i = 0; i < hours.length; i++) {
       var customers = Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers);
       console.log(hours[i], customers);
+      this.hourlyCustomersArray.push(customers);
     }
   },
   hourlyPurchases: function() {
     for (var i = 0; i < hours.length; i++) {
       var purchases = Math.floor(Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers) * this.averageCookies);
       console.log(hours[i], purchases);
+      this.hourlyPurchasesArray.push(purchases);
     }
-  }
+  },
+  hourlyCustomersArray : [],
+  hourlyPurchasesArray : []
+};
+seattleCenter.hourlyCustomers();
+seattleCenter.hourlyPurchases();
+var customerList =  document.getElementById('seattleCenter_Customers');
+for (var i = 0; i < hours.length; i++) {
+  var listItem = document.createElement('li');
+  var listContent = hours[i] + ' ' + seattleCenter.hourlyCustomersArray[i];
+  listItem.textContent = listContent;
+  customerList.appendChild(listItem);}
+
+var customerList2 = document.getElementById('seattleCenter_Purchases');
+for (var i = 0; i < hours.length; i++) {
+  var listItem = document.createElement('li');
+  var listContent = hours[i] + ' ' + seattleCenter.hourlyPurchasesArray[i];
+  listItem.textContent = listContent;
+  customerList2.appendChild(listItem);
 };
 var capitolHill = {
   minimumCustomers: 20,
