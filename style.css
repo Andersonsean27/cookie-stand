@@ -1,0 +1,18 @@
+* {
+  background-color: #e3c2c9;
+  font-weight: bold;
+  font-family: verdana ref;
+  color: #C36C3C;
+}
+ul {
+  background-color: #FF1C0D;
+  display: inline-block;
+  font-family: verdana;
+  color: black;
+}
+div > div {
+  background-color: #B85F68;
+}
+section {
+  background-color: #FF1C0D;
+}
