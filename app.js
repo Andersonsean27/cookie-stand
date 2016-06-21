@@ -1,3 +1,34 @@
+'use strict';
+function cookieStand (minimumCustomers,maximumCustomers,averageCookies,totalDailyCookieSales) {
+  this.minimumCustomers = minimumCustomers;
+  this.maximumCustomers = maximumCustomers;
+  this.averageCookies = averageCookies;
+  this.totalDailyCookieSales = totalDailyCookieSales;
+  this.getHourlyCustomers = function () {
+    for (var i = 0; i < hours.length; i++) {
+      var customers = Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers);
+      this.hourlyCustomersArray.push(customers);
+    }
+}
+  this.getHourlyPurchases = function () {
+    for (var i = 0; i < hours.length; i++) {
+      var purchases = Math.floor(Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers) * this.averageCookies);
+      this.hourlyPurchasesArray.push(purchases);
+      firstAndPike.totalDailyCookieSales += purchases;
+    }
+}
+  var firstAndPike = new cookieStand (23, 65, 6.3, 0);
+  var seaTacAirport = new cookieStand (3, 24, 1.2, 0);
+  var seattleCenter = new cookieStand (11, 38, 3.7, 0);
+  var capitolHill = new cookieStand (20, 38, 2.3, 0);
+  var alki = new cookieStand (2, 16, 4.6, 0);
+
+
+
+
+
+
+
 var hours = ['6:00am', '7:00am','8:00am','9:00am','10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
 var firstAndPike = {
   minimumCustomers: 23,
