@@ -6,7 +6,14 @@
 </head>
 <body>
   <h1> Salmon Cookie Data </h1>
-  <p> This site presents information on the sales of salmon cookies. Below is a table presenting how many cookies, it is estimated, are needed at each store for each hour as well as a total number for the day. <p>
+    <p> This site presents information on the sales of salmon cookies. Below is a table presenting how many cookies, it is estimated, are needed at each store for each hour as well as a total number for the day. <p>
+  <form>
+    <fieldset>
+      <label for "store">Add Your Store!</label>
+      <input type="text" name="store" id="newStoreLocation" required>
+    </fieldset>
+  </form>
+
   <table id='CookieSales'> </table>
   <img src='salmon.png'>
   <script src='app.js'> </script>
