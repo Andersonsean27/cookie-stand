@@ -1,3 +1,4 @@
+
 'use strict';
 var hours = ['6:00am', '7:00am','8:00am','9:00am','10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
 var cookieTable = document.getElementById('CookieSales');
@@ -39,6 +40,10 @@ function CookieStand (storeLocation, minimumCustomers, maximumCustomers, average
       var purchases = Math.floor(Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers) * this.averageCookies);
       this.hourlyPurchasesArray.push(purchases);
       firstAndPike.totalDailyCookieSales += purchases;
+      seaTacAirport.totalDailyCookieSales += purchases;
+      seattleCenter.totalDailyCookieSales += purchases;
+      capitolHill.totalDailyCookieSales += purchases;
+      alki.totalDailyCookieSales += purchases;
     }
   };
   this.render = function() {
