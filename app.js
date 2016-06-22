@@ -18,8 +18,23 @@ function makeHeaderRow () {
   }
   cookieTable.appendChild(headerRow);
 }
-
+function makeFooterRow () {
+  var footerRow = document.createElement('tr');
+  var footerCell = document.createElement('td');
+  footerCell.textContent = '';
+  footerRow.appendChild(footerCell);
+  var footerCell = document.createElement('td');
+  footerCell.textContent = '';
+  footerRow.appendChild(footerCell);
+  for(var i = 0; i < hours.length; i++) {
+    var footerCell = document.createElement('td');
+    footerCell.textContent = '';
+    footerRow.appendChild(footerCell);
+  }
+  cookieTable.appendChild(footerRow);
+}
 makeHeaderRow();
+makeFooterRow();
 
 function CookieStand (storeLocation, minimumCustomers, maximumCustomers, averageCookies, totalDailyCookieSales) {
   this.storeLocation = storeLocation;
