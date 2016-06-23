@@ -7,10 +7,17 @@
 <body>
   <h1> Salmon Cookie Data </h1>
     <p> This site presents information on the sales of salmon cookies. Below is a table presenting how many cookies, it is estimated, are needed at each store for each hour as well as a total number for the day. <p>
-  <form>
+  <form id="form">
     <fieldset>
       <label for "store">Add Your Store!</label>
+      <label for "MinCust">Minimum Customers Per Hour</label>
+      <label for "MaxCust">Maximum Customers Per Hour</label>
+      <label for "AvgCookies">Average Cookies Per Hour</label>
       <input type="text" name="store" id="newStoreLocation" required>
+      <input type="number" name="MinCust" id="minimumCustPerHour" required>
+      <input type="number" name="MaxCust" id="maximumCustPerHour" required>
+      <input type="number" name="AvgCookies" id="avgCookiesPerHour" required>
+      <input type="submit" value="submit" id="submitButton">
     </fieldset>
   </form>
 

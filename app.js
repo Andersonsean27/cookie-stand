@@ -3,6 +3,11 @@
 var hours = ['6:00am', '7:00am','8:00am','9:00am','10:00am', '11:00am', '12:00pm', '1:00pm', '2:00pm', '3:00pm', '4:00pm', '5:00pm', '6:00pm', '7:00pm'];
 var cookieTable = document.getElementById('CookieSales');
 var allStores = [];
+var form = document.getElementById('form');
+var elInput = '';
+var elMin = 0;
+var elMax = 0;
+var elAvg = 0;
 
 function CookieStand (storeLocation, minimumCustomers, maximumCustomers, averageCookies) {
   this.storeLocation = storeLocation;
@@ -27,25 +32,6 @@ function CookieStand (storeLocation, minimumCustomers, maximumCustomers, average
   };
   allStores.push(this);
 }
-//   this.render = function() {
-//     this.getHourlyCustomers();
-//     this.getHourlyPurchases();
-//     var headerRow = document.createElement('tr');
-//     var headerCell = document.createElement('th');
-//     headerCell.textContent = this.storeLocation;
-//     headerRow.appendChild(headerCell);
-//     var headerCell = document.createElement('th');
-//     headerCell.textContent = this.totalDailyCookieSales;
-//     headerRow.appendChild(headerCell);
-//     for(var i = 0; i < hours.length; i++) {
-//       var headerCell = document.createElement('th');
-//       headerCell.textContent = this.hourlyPurchasesArray[i];
-//       headerRow.appendChild(headerCell);
-//     }
-//     cookieTable.appendChild(headerRow);
-//   };
-// }
-
 // updated render function
 var render = function() {
   for(var j = 0; j < allStores.length; j++) {
@@ -73,7 +59,19 @@ var seattleCenter = new CookieStand ('Seattle Center', 11, 38, 3.7);
 var capitolHill = new CookieStand ('Capitol Hill', 20, 38, 2.3);
 var alki = new CookieStand ('Alki', 2, 16, 4.6);
 
+form.addEventListener('submit', function(event) {
+  console.log('it runnnnning');
+  event.preventDefault();
+  elInput = document.getElementById('newStoreLocation');
+  elMin = document.getElementById();
+  var newStore = new CookieStand (elInput.value,3,5,2);
+  makeHeaderRow();
+  render();
+  makeFooterRow();
+},false);
+
 var makeHeaderRow = function () {
+  cookieTable.innerHTML = '';
   var headerRow = document.createElement('tr');
   var headerCell = document.createElement('th');
   headerCell.textContent = '';
@@ -107,9 +105,4 @@ var makeFooterRow = function () {
 
 makeHeaderRow();
 render();
-// firstAndPike.render();
-// seaTacAirport.render();
-// seattleCenter.render();
-// capitolHill.render();
-// alki.render();
 makeFooterRow();
