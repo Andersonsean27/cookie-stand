@@ -1,17 +1,66 @@
 * {
   background: #e3c2c9;
-  font-weight: bold;
   font-family: verdana ref;
   color: #C36C3C;
 }
 
-ul {
-  background-color: #FF1C0D;
+header {
+  background-color: #C36C3C;;
+}
+
+section {
   display: inline-block;
-  font-family: helvetica;
-  color: black;
+  border: 1px solid black;
+}
+
+p {
+  font-size: 24px;
+  padding: 10px;
 }
 
 table, tr, td, th {
   outline: 1px solid black;
 }
+#salmon {
+  width: 300px;
+  height: auto;
+}
+
+#family {
+  width: 600px;
+  height: auto;
+}
+ #cookie {
+   width: 600px;
+   height: 338px;
+ }
+
+ #fish {
+   width: 610px;
+   height: auto;
+ }
+
+ #cutter {
+   width: 600px;
+   height: 541px;
+   }
+
+  #chinook {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #merchandise {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #shirt {
+    display: block;
+    margin: 0 auto;
+  }
+
+  merchandise p {
+    display: block;
+    margin: 0 auto;
+  }
