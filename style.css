@@ -6,21 +6,42 @@
 
 header {
   background-color: #C36C3C;;
+  height: 100px;
 }
 
 section {
-  display: inline-block;
-  border: 1px solid black;
+  display: block;
+  width: 50%;
+  float: left;
 }
 
 p {
-  font-size: 24px;
+  font-size: 22px;
   padding: 10px;
 }
 
 table, tr, td, th {
   outline: 1px solid black;
 }
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+footer {
+  height: 100px;
+  background-color: #C36C3C;
+  clear: both;
+}
+
+footer p {
+  display:inline-block;
+}
+
 #salmon {
   width: 300px;
   height: auto;
@@ -30,6 +51,7 @@ table, tr, td, th {
   width: 600px;
   height: auto;
 }
+
  #cookie {
    width: 600px;
    height: 338px;
@@ -48,6 +70,7 @@ table, tr, td, th {
   #chinook {
     display: block;
     margin: 0 auto;
+    height: 225px;
   }
 
   #merchandise {
