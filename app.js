@@ -21,22 +21,24 @@ function CookieStand (storeLocation, minimumCustomers, maximumCustomers, average
   this.getHourlyCustomers = function () {
     for (var i = 0; i < hours.length; i++) {
       var customers = Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers);
-      this.hourlyCustomersArray.push(customers);
+      this.hourlyCustomersArray[i] = customers;
     }
   };
   this.getHourlyPurchases = function () {
     for (var i = 0; i < hours.length; i++) {
-      var purchases = Math.floor(Math.floor(Math.random() * (this.maximumCustomers - this.minimumCustomers) + this.minimumCustomers) * this.averageCookies);
-      this.hourlyPurchasesArray.push(purchases);
+      var purchases = Math.floor(this.hourlyCustomersArray[i] * this.averageCookies);
+      this.hourlyPurchasesArray[i] = purchases;
       this.totalDailyCookieSales += purchases;
     }
   };
+  this.getHourlyCustomers();
+  this.getHourlyPurchases();
   allStores.push(this);
 }
 var render = function() {
   for(var j = 0; j < allStores.length; j++) {
-    allStores[j].getHourlyCustomers();
-    allStores[j].getHourlyPurchases();
+    // allStores[j].getHourlyCustomers();
+    // allStores[j].getHourlyPurchases();
     var headerRow = document.createElement('tr');
     var headerCell = document.createElement('td');
     headerCell.textContent = allStores[j].storeLocation;
@@ -57,6 +59,7 @@ var seaTacAirport = new CookieStand ('SeaTac Airport', 3, 24, 1.2);
 var seattleCenter = new CookieStand ('Seattle Center', 11, 38, 3.7);
 var capitolHill = new CookieStand ('Capitol Hill', 20, 38, 2.3);
 var alki = new CookieStand ('Alki', 2, 16, 4.6);
+
 form.addEventListener('submit', function(event) {
   event.preventDefault();
   elInput = document.getElementById('newStoreLocation');
