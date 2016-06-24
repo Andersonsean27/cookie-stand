@@ -1,6 +1,6 @@
 * {
   background: #e3c2c9;
-  font-family: helvetica;
+  font-family: times;
   color: #C36C3C;
 }
 
@@ -17,6 +17,16 @@ li {
   padding: 10px;
 }
 
+fieldset {
+    background-color: #ffffe6;
+    width: 100%;
+    padding: 5px;
+  }
+
+label {
+    background-color: #ffffe6;
+}
+
 section {
   display: block;
   width: 50%;
@@ -31,10 +41,8 @@ p {
 table, tr, td, th {
   outline: 1px solid black;
   background-color: #b3ecff;
+  width: 100%;
 }
-
-
-
 
 h1 {
   font-size: 32px;
