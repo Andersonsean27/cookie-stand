@@ -1,8 +1,30 @@
 * {
-  background-color: #e3c2c9;
-  font-weight: bold;
-  font-family: verdana ref;
+  background: #e3c2c9;
+  font-family: times;
   color: #C36C3C;
+}
+
+header {
+  background-color: #C36C3C;;
+  height: 100px;
+}
+
+li {
+  display: inline;
+  text-align: justify;
+  word-spacing: 30px;
+  color: white;
+  padding: 10px;
+}
+
+fieldset {
+    background-color: #ffffe6;
+    width: 100%;
+    padding: 5px;
+}
+
+label {
+    background-color: #ffffe6;
 }
 
 ul {
@@ -17,9 +39,115 @@ div div {
 }
 
 section {
-  background-color: #FF1C0D;
+  display: block;
+  width: 50%;
+  float: left;
+}
+
+p {
+  font-size: 22px;
+  padding: 10px;
 }
 
 table, tr, td, th {
   outline: 1px solid black;
+  background-color: #b3ecff;
+  width: 100%;
+}
+
+h1 {
+  font-size: 32px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+footer {
+  height: 100px;
+  background-color: #C36C3C;
+  clear: both;
+}
+
+footer p {
+  display:inline-block;
+}
+
+ul {
+  display: inline-block;
+  position: relative;
+  Top: 40px;
+  Left: 40px;
+}
+
+#salmon {
+  width: 300px;
+  height: auto;
+}
+
+#family {
+  width: 600px;
+  height: auto;
+}
+
+ #cookie {
+   width: 600px;
+   height: 338px;
+}
+
+ #fish {
+   width: 610px;
+   height: auto;
+}
+
+ #cutter {
+   width: 600px;
+   height: 541px;
+}
+
+  #chinook {
+    display: block;
+    margin: 0 auto;
+    height: 225px;
+    position: relative;
+    right: 20px;
+    top: 5px;
+}
+
+  #merchandise {
+    display: block;
+    margin: 0 auto;
+}
+
+  #shirt {
+    display: block;
+    margin: 10px auto;
+}
+
+  #aboutUs {
+    margin-top: 10px;
+}
+
+  #trademark {
+    position: relative;
+    top: 30px;
+
+}
+
+  #cookieSales {
+    background-color:teal;
+  }
+
+  #trademark p {
+    margin-top:5px;
+    font-size: 16px;
+    color: white;
+
+}
+  #merchandise p {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
