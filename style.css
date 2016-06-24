@@ -1,12 +1,20 @@
 * {
   background: #e3c2c9;
-  font-family: verdana ref;
+  font-family: helvetica;
   color: #C36C3C;
 }
 
 header {
   background-color: #C36C3C;;
   height: 100px;
+}
+
+li {
+  display: inline;
+  text-align: justify;
+  word-spacing: 30px;
+  color: white;
+  padding: 10px;
 }
 
 section {
@@ -44,7 +52,9 @@ footer p {
 
 ul {
   display: inline-block;
-  text-align: justify;
+  position: relative;
+  Top: 40px;
+  Left: 40px;
 }
 
 #salmon {
@@ -60,35 +70,53 @@ ul {
  #cookie {
    width: 600px;
    height: 338px;
- }
+}
 
  #fish {
    width: 610px;
    height: auto;
- }
+}
 
  #cutter {
    width: 600px;
    height: 541px;
-   }
+}
 
   #chinook {
     display: block;
     margin: 0 auto;
     height: 225px;
-  }
+    position: relative;
+    right: 20px;
+    top: 5px;
+}
 
   #merchandise {
     display: block;
     margin: 0 auto;
-  }
+}
 
   #shirt {
     display: block;
-    margin: 0 auto;
-  }
+    margin: 10px auto;
+}
 
+  #aboutUs {
+    margin-top: 10px;
+}
+
+  #trademark {
+    position: relative;
+    top: 30px;
+
+}
+  #trademark p {
+    margin-top:5px;
+    font-size: 16px;
+    color: white;
+
+}
   merchandise p {
     display: block;
     margin: 0 auto;
-  }
+}
