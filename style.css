@@ -21,10 +21,21 @@ fieldset {
     background-color: #ffffe6;
     width: 100%;
     padding: 5px;
-  }
+}
 
 label {
     background-color: #ffffe6;
+}
+
+ul {
+  background-color: #FF1C0D;
+  display: inline-block;
+  font-family: verdana;
+  color: black;
+}
+
+div div {
+  background-color: #B85F68;
 }
 
 section {
