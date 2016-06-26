@@ -34,10 +34,6 @@ ul {
   color: black;
 }
 
-div div {
-  background-color: #B85F68;
-}
-
 section {
   display: block;
   width: 50%;
@@ -47,12 +43,6 @@ section {
 p {
   font-size: 22px;
   padding: 10px;
-}
-
-table, tr, td, th {
-  outline: 1px solid black;
-  background-color: #b3ecff;
-  width: 100%;
 }
 
 h1 {
@@ -82,32 +72,47 @@ ul {
   Left: 40px;
 }
 
-#salmon {
-  width: 300px;
-  height: auto;
+div div {
+  background-color: #B85F68;
 }
+
+footer section {
+  background-color: #C36C3C;
+}
+
+footer section p {
+  text-align: center;
+  background-color: #C36C3C;
+}
+
+table, tr, td, th {
+  outline: 1px solid black;
+  background-color: #b3ecff;
+  width: 100%;
+}
+
 
 #family {
   width: 600px;
   height: auto;
 }
 
- #cookie {
+#cookie {
    width: 600px;
    height: 338px;
 }
 
- #fish {
-   width: 610px;
+#fish {
+   width: 600px;
    height: auto;
 }
 
- #cutter {
+#cutter {
    width: 600px;
    height: 541px;
 }
 
-  #chinook {
+#chinook {
     display: block;
     margin: 0 auto;
     height: 225px;
@@ -116,38 +121,52 @@ ul {
     top: 5px;
 }
 
-  #merchandise {
+#merchandise {
     display: block;
     margin: 0 auto;
 }
 
-  #shirt {
+#Welcome {
+  margin-top: 10px;
+}
+
+#shirt {
     display: block;
     margin: 10px auto;
 }
 
-  #aboutUs {
+#aboutUs {
     margin-top: 10px;
 }
 
-  #trademark {
+#trademark {
     position: relative;
     top: 30px;
 
 }
 
-  #cookieSales {
+#cookieSales {
     background-color:teal;
   }
 
-  #trademark p {
+  #salmon {
+    height: auto;
+    width: 250px;
+  }
+
+#trademark p {
     margin-top:5px;
     font-size: 16px;
     color: white;
 
 }
-  #merchandise p {
+
+#merchandise p {
     display: block;
     margin: 0 auto;
     text-align: center;
+}
+
+#intro {
+  border: 5px solid #C36C3C;
 }
