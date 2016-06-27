@@ -5,7 +5,7 @@
 }
 
 header {
-  background-color: #C36C3C;;
+  background-color: #C36C3C;
   height: 100px;
 }
 
@@ -14,7 +14,13 @@ li {
   text-align: justify;
   word-spacing: 30px;
   color: white;
-  padding: 10px;
+  padding: 15px;
+  border: 5px solid #C36C3C;
+  background-color: #e6ffff;
+}
+
+a {
+  background-color: #e6ffff;
 }
 
 fieldset {
@@ -32,6 +38,9 @@ ul {
   display: inline-block;
   font-family: verdana;
   color: black;
+  position: relative;
+  Top: 40px;
+  Left: 40px;
 }
 
 section {
@@ -43,7 +52,7 @@ section {
 p {
   font-size: 20px;
   padding: 10px;
-  line-height: 1.2; 
+  line-height: 1.2;
 }
 
 h1 {
@@ -64,13 +73,6 @@ footer {
 
 footer p {
   display:inline-block;
-}
-
-ul {
-  display: inline-block;
-  position: relative;
-  Top: 40px;
-  Left: 40px;
 }
 
 div div {
@@ -152,17 +154,17 @@ table, tr, td, th {
     background-color:teal;
   }
 
-  #salmon {
+#salmon {
     height: auto;
     width: 250px;
   }
+
+#intro {
+  border: 5px solid #C36C3C;
+}
 
 #merchandise p {
     display: block;
     margin: 0 auto;
     text-align: center;
-}
-
-#intro {
-  border: 5px solid #C36C3C;
 }
