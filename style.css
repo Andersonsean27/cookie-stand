@@ -41,8 +41,9 @@ section {
 }
 
 p {
-  font-size: 22px;
+  font-size: 20px;
   padding: 10px;
+  line-height: 1.2; 
 }
 
 h1 {
@@ -78,6 +79,14 @@ div div {
 
 footer section {
   background-color: #C36C3C;
+}
+
+footer section p {
+    font-size: 16px;
+    color: white;
+    float: none;
+    margin: 0 auto;
+
 }
 
 footer section p {
@@ -139,12 +148,6 @@ table, tr, td, th {
     margin-top: 10px;
 }
 
-#trademark {
-    position: relative;
-    top: 30px;
-
-}
-
 #cookieSales {
     background-color:teal;
   }
@@ -153,13 +156,6 @@ table, tr, td, th {
     height: auto;
     width: 250px;
   }
-
-#trademark p {
-    margin-top:5px;
-    font-size: 16px;
-    color: white;
-
-}
 
 #merchandise p {
     display: block;
