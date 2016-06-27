@@ -130,6 +130,7 @@ table, tr, td, th {
     position: relative;
     right: 20px;
     top: 5px;
+    margin-left: 20px;
 }
 
 #merchandise {
